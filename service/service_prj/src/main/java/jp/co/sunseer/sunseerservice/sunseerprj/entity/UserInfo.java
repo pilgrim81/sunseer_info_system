@@ -27,7 +27,7 @@ public class UserInfo implements Serializable {
 
     @ApiModelProperty(value = "主キーID")
     @TableId(value = "id", type = IdType.ID_WORKER_STR)
-    private Long id;
+    private String id;
 
     @ApiModelProperty(value = "名前")
     private String name;
