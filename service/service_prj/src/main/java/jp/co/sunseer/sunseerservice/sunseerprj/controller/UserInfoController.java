@@ -1,6 +1,8 @@
 package jp.co.sunseer.sunseerservice.sunseerprj.controller;
 
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import jp.co.sunseer.sunseerservice.sunseerprj.entity.UserInfo;
 import jp.co.sunseer.sunseerservice.sunseerprj.service.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,12 +15,13 @@ import java.util.List;
 
 /**
  * <p>
- *  前端控制器
+ *  コントローラー
  * </p>
  *
- * @author Group B
+ * @author Group AB
  * @since 2021-05-17
  */
+@Api(description = "ユーザー管理システム")
 @RestController
 @RequestMapping("/sunseerprj/user-info")
 public class UserInfoController {
@@ -26,6 +29,7 @@ public class UserInfoController {
     @Autowired
     private UserInfoService userInfoService;
 
+    @ApiOperation(value = "ユーザー全件")
     @GetMapping("findAll")
     public List<UserInfo> findAllUser(){
         return userInfoService.list(null);
