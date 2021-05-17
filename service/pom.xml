@@ -88,6 +88,11 @@
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>jp.co.sunseer</groupId>-->
+<!--            <artifactId>commonutils</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--        </dependency>-->
     </dependencies>
     <properties>
         <maven.compiler.source>16</maven.compiler.source>

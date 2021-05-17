@@ -14,8 +14,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 //@PropertySource(value = {"classpath:jp.co.sunseer.sunseerservice.sunseerprj.config/config_prj"})
 @EnableAutoConfiguration
 @ComponentScan(basePackages = {"jp.co.sunseer"})
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
-@CrossOrigin
+@SpringBootApplication
 public class sunseerprjApplication {
 
 	public static void main(String[] args) {
