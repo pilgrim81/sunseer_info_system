@@ -31,9 +31,9 @@ public class CodeGenerator {
 //        gc.setOutputDir("C:\\Users\\2018SUNSEERL3\\Desktop\\デスクトップ\\勉強会\\python\\SpringBoot\\项目源码\\day02\\guli_parent\\service\\service_edu" + "/src/main/java");
         gc.setOutputDir(projectPath + "/src/main/java");
 
-        gc.setAuthor("Group B");
+        gc.setAuthor("Group AB");
         gc.setOpen(false); //生成した後で、フォルダを開く
-        gc.setFileOverride(true); //生成する際に、古いデータを削除するか
+        gc.setFileOverride(false); //生成する際に、古いデータを削除するか
 
         //UserServie
         gc.setServiceName("%sService");	//UserServie先頭のIを付けない
