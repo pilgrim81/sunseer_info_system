@@ -14,8 +14,8 @@ import lombok.experimental.Accessors;
  * 
  * </p>
  *
- * @author Group B
- * @since 2021-05-17
+ * @author Group AB
+ * @since 2021-05-18
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -37,6 +37,8 @@ public class UserInfo implements Serializable {
 
     @ApiModelProperty(value = "メアド")
     private String email;
+
+    private Boolean isDeleted;
 
 
 }

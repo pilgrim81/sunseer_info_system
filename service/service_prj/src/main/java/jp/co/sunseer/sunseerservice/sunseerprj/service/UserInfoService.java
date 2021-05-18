@@ -8,8 +8,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
  *  服务类
  * </p>
  *
- * @author Group B
- * @since 2021-05-17
+ * @author Group AB
+ * @since 2021-05-18
  */
 public interface UserInfoService extends IService<UserInfo> {
 
